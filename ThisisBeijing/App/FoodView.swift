@@ -11,6 +11,7 @@ struct FoodView: View {
     
     let headers: [Header] = headersData
     let foods: [Food] = foodsData
+    let snackBars: [SnackBar] = snackBarsData
     
     var body: some View {
         ScrollView(.vertical,showsIndicators: false){
@@ -24,12 +25,12 @@ struct FoodView: View {
                 }
                 Text("小吃的烹饪方式")
                     .fontWeight(.bold)
-                    .modifier(TitlModifier())
+                    .modifier(TitleModifier())
                 CookingWayView()
                     .frame(maxWidth: 640)
                 VStack(alignment: .center,spacing: 0, content: {
                     Text("特色北京小吃")
-                        .modifier(TitlModifier())
+                        .modifier(TitleModifier())
                     
                     ScrollView(.horizontal,showsIndicators: false){
                         HStack(alignment: .top,spacing: 60, content: {
@@ -45,6 +46,19 @@ struct FoodView: View {
                 .frame(maxWidth: 640)
                 .padding()
                 .padding(.bottom,85)
+                
+                Text("特色小吃店")
+                    .fontWeight(.bold)
+                    .modifier(TitleModifier())
+                
+                VStack(alignment: .center,spacing: 20, content: {
+                    ForEach(snackBars) { snackBar in
+                        SnackBarCardView(snackBar: snackBar)
+                    }
+                })
+                .frame(maxWidth: 640)
+                .padding(.horizontal)
+                
             }
             
         }
@@ -59,7 +73,7 @@ struct FoodView_Previews: PreviewProvider {
     }
 }
 
-struct TitlModifier: ViewModifier{
+struct TitleModifier: ViewModifier{
     func body(content: Content) -> some View {
         content
             .font(.system(.title,design: .serif))

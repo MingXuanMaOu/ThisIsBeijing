@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47BBC77129626500007962A0 /* SnackBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC77029626500007962A0 /* SnackBarModel.swift */; };
+		47BBC7732962656E007962A0 /* SnackBarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC7722962656E007962A0 /* SnackBarData.swift */; };
+		47BBC775296265BC007962A0 /* SnackBarCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC774296265BC007962A0 /* SnackBarCardView.swift */; };
+		47BBC77729626A9F007962A0 /* SnackBarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC77629626A9F007962A0 /* SnackBarRatingView.swift */; };
+		47BBC77929626BCF007962A0 /* SnackBarInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC77829626BCF007962A0 /* SnackBarInfoView.swift */; };
+		47BBC77B29626EA7007962A0 /* SnackBarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC77A29626EA7007962A0 /* SnackBarDetailView.swift */; };
+		47BBC77D29628008007962A0 /* HutongRankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC77C29628008007962A0 /* HutongRankingView.swift */; };
+		47BBC77F2962801A007962A0 /* HutongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC77E2962801A007962A0 /* HutongModel.swift */; };
+		47BBC78129628066007962A0 /* HutongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BBC78029628066007962A0 /* HutongData.swift */; };
 		47D886042961B43B00E4D539 /* ThisisBeijingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D886032961B43B00E4D539 /* ThisisBeijingApp.swift */; };
 		47D886062961B43B00E4D539 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D886052961B43B00E4D539 /* FoodView.swift */; };
 		47D886082961B43C00E4D539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D886072961B43C00E4D539 /* Assets.xcassets */; };
@@ -26,6 +35,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47BBC77029626500007962A0 /* SnackBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarModel.swift; sourceTree = "<group>"; };
+		47BBC7722962656E007962A0 /* SnackBarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarData.swift; sourceTree = "<group>"; };
+		47BBC774296265BC007962A0 /* SnackBarCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarCardView.swift; sourceTree = "<group>"; };
+		47BBC77629626A9F007962A0 /* SnackBarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarRatingView.swift; sourceTree = "<group>"; };
+		47BBC77829626BCF007962A0 /* SnackBarInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarInfoView.swift; sourceTree = "<group>"; };
+		47BBC77A29626EA7007962A0 /* SnackBarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarDetailView.swift; sourceTree = "<group>"; };
+		47BBC77C29628008007962A0 /* HutongRankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongRankingView.swift; sourceTree = "<group>"; };
+		47BBC77E2962801A007962A0 /* HutongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongModel.swift; sourceTree = "<group>"; };
+		47BBC78029628066007962A0 /* HutongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongData.swift; sourceTree = "<group>"; };
 		47D886002961B43B00E4D539 /* ThisisBeijing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisisBeijing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D886032961B43B00E4D539 /* ThisisBeijingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisisBeijingApp.swift; sourceTree = "<group>"; };
 		47D886052961B43B00E4D539 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
@@ -99,6 +117,8 @@
 			children = (
 				47D886252961E5A000E4D539 /* HeaderData.swift */,
 				47D8862D2961F31600E4D539 /* FoodData.swift */,
+				47BBC7722962656E007962A0 /* SnackBarData.swift */,
+				47BBC78029628066007962A0 /* HutongData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -108,6 +128,8 @@
 			children = (
 				47D886232961E55400E4D539 /* HeaderModel.swift */,
 				47D8862B2961F2D400E4D539 /* FoodModel.swift */,
+				47BBC77029626500007962A0 /* SnackBarModel.swift */,
+				47BBC77E2962801A007962A0 /* HutongModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +140,11 @@
 				47D886212961E04F00E4D539 /* HeaderView.swift */,
 				47D886272961E6D000E4D539 /* CookingWayView.swift */,
 				47D886292961EB5A00E4D539 /* FoodCardView.swift */,
+				47BBC774296265BC007962A0 /* SnackBarCardView.swift */,
+				47BBC77629626A9F007962A0 /* SnackBarRatingView.swift */,
+				47BBC77829626BCF007962A0 /* SnackBarInfoView.swift */,
+				47BBC77A29626EA7007962A0 /* SnackBarDetailView.swift */,
+				47BBC77C29628008007962A0 /* HutongRankingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,17 +234,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D8862A2961EB5A00E4D539 /* FoodCardView.swift in Sources */,
+				47BBC77929626BCF007962A0 /* SnackBarInfoView.swift in Sources */,
 				47D8861E2961D9F300E4D539 /* SettingsView.swift in Sources */,
+				47BBC7732962656E007962A0 /* SnackBarData.swift in Sources */,
 				47D8861A2961D9C000E4D539 /* BeijingView.swift in Sources */,
 				47D8862C2961F2D400E4D539 /* FoodModel.swift in Sources */,
 				47D886202961DA0700E4D539 /* AppView.swift in Sources */,
+				47BBC77F2962801A007962A0 /* HutongModel.swift in Sources */,
 				47D886282961E6D000E4D539 /* CookingWayView.swift in Sources */,
+				47BBC77729626A9F007962A0 /* SnackBarRatingView.swift in Sources */,
 				47D8862E2961F31600E4D539 /* FoodData.swift in Sources */,
 				47D886062961B43B00E4D539 /* FoodView.swift in Sources */,
 				47D886042961B43B00E4D539 /* ThisisBeijingApp.swift in Sources */,
+				47BBC77D29628008007962A0 /* HutongRankingView.swift in Sources */,
+				47BBC78129628066007962A0 /* HutongData.swift in Sources */,
 				47D8861C2961D9DB00E4D539 /* HutongView.swift in Sources */,
+				47BBC775296265BC007962A0 /* SnackBarCardView.swift in Sources */,
 				47D886242961E55400E4D539 /* HeaderModel.swift in Sources */,
 				47D886262961E5A000E4D539 /* HeaderData.swift in Sources */,
+				47BBC77B29626EA7007962A0 /* SnackBarDetailView.swift in Sources */,
+				47BBC77129626500007962A0 /* SnackBarModel.swift in Sources */,
 				47D886222961E04F00E4D539 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

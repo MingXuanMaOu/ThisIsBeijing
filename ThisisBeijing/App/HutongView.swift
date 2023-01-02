@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct HutongView: View {
+    
+    let hutong: [Hutong] = HutongsData
+    
     var body: some View {
-        Text("Hutong")
+        ScrollView(.horizontal,showsIndicators: false){
+            VStack{
+                Spacer()
+                HStack(alignment: .center,spacing: 25, content: {
+                    ForEach(hutong) { hutong in
+                        HutongRankingView(hutong: hutong)
+                    }
+                })
+                .padding(.vertical)
+                .padding(.horizontal,25)
+                Spacer()
+            }
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
